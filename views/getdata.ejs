@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetData</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+          <th>Names</th>
+          <th>locations</th>
+        </tr>
+        <% for(var i = 0 ; i<data.length ; i++) { %>
+        <tr>
+                <td><%= data[i].name %></td>
+                <td><%= data[i].location %></td>
+           
+        </tr>
+        <% } %>
+      </table>
+      <br><br>
+      <a class="btn btn-primary" href="/" role="button">go back to Home page</a>
+</body>
+</html>
